@@ -1,0 +1,8 @@
+<div class="content" *ngIf="post">
+
+  <div class="card-container">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+    <button (click)="goBack()">back</button>
+  </div>
+</div>

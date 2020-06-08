@@ -1,0 +1,14 @@
+<!-- Show list of posts  -->
+<div class="content" *ngFor="let user of users">
+
+  <div class="card-container">
+    <a class="card" routerLink="/posts/{{user.id}}">
+
+      <h2>{{user.title}}</h2>
+      
+      <!-- if description length is more than maxLengthBody value then show it in short string mode and finish by '...' characters -->  
+      <p>{{ user.body.length <= maxLenghtBody ? user.body : user.body.substr(1,maxLenghtBody-3) + '...'}}</p>
+
+    </a>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.content {
+  margin: 10px auto;
+  max-width: 1000px;
+}
+
+.card-container {
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  padding: 20px;
+}
